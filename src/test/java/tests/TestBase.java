@@ -37,12 +37,14 @@ public class TestBase {
 
     @AfterEach
     void addAttachments() {
+        String deviceHost = System.getProperty("deviceHost", "emulation");
         String sessionId = Selenide.sessionId().toString();
-        System.out.println(sessionId);
+        System.out.println("Session ID: " + sessionId);
 
         Attach.pageSource();
-        closeWebDriver();
-
+        if (deviceHost.equals("browserstack")) {
         Attach.addVideo(sessionId);
+         }
+        closeWebDriver();
     }
 }
