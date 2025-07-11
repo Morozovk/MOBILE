@@ -6,7 +6,7 @@ import org.aeonbits.owner.Config;
         "classpath:emulation.properties"
 })
 
-public interface EmulationConfig extends Config {
+public interface EmulationConfig extends Config{
 
     @Config.Key("emulation.url")
     String url();

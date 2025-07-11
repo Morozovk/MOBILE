@@ -29,11 +29,6 @@ public class EmulationDriver implements WebDriverProvider {
         caps.setDeviceName(config.emulationDevice());
         caps.setPlatformVersion(config.emulationOsVersion());
 
-        File appFile = new File(config.appPath());
-        if (!appFile.exists()) {
-            throw new RuntimeException("Файл приложения не найден: " + config.appPath());
-        }
-
         caps.setApp(new File(config.appPath()).getAbsolutePath());
         caps.setAppPackage(config.emulationSetAppPackage());
         caps.setAppActivity(config.emulationSetAppActivity());

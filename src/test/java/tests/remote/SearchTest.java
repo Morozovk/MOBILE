@@ -13,6 +13,7 @@ import static io.appium.java_client.AppiumBy.accessibilityId;
 import static io.appium.java_client.AppiumBy.id;
 import static io.qameta.allure.Allure.step;
 
+@Tag("android_browserstack")
 public class SearchTest extends TestBase {
     @BeforeAll
     static void setup() {
@@ -20,7 +21,6 @@ public class SearchTest extends TestBase {
         System.setProperty("app", "bs://sample.app");
     }
 
-    @Tag("android_browserstack")
     @Test
     void searchAppiumTest() {
         step("Type search", () -> {
@@ -35,7 +35,6 @@ public class SearchTest extends TestBase {
         });
     }
 
-    @Tag("android_browserstack")
     @Test
     void searchSelenideTest() {
         step("Type search", () -> {

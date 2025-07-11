@@ -68,11 +68,3 @@ tasks.register('android_emulation', Test) {
     systemProperty 'platform', 'android'
     systemProperty 'deviceHost', 'emulation'
 }
-
-tasks.register('android_real', Test) {
-    useJUnitPlatform {
-        includeTags 'android_real'
-    }
-    systemProperty 'platform', 'android'
-    systemProperty 'deviceHost', 'real'
-}
