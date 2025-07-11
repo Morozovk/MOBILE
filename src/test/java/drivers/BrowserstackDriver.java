@@ -22,8 +22,6 @@ public class BrowserstackDriver implements WebDriverProvider {
 
         MutableCapabilities caps = new MutableCapabilities();
 
-        String platform = System.getProperty("platform", "android");
-
         caps.setCapability("browserstack.user", config.user());
         caps.setCapability("browserstack.key", config.key());
 

@@ -15,15 +15,16 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
+
     @BeforeAll
     static void beforeAll() {
-        String deviceHost = System.getProperty("deviceHost", "local");
+            String deviceHost = System.getProperty("deviceHost", "browserstack");
 
-        if (deviceHost.equals("browserstack")) {
-            Configuration.browser = BrowserstackDriver.class.getName();
-        } else {
-            Configuration.browser = EmulationDriver.class.getName();
-        }
+            if (deviceHost.equals("browserstack")) {
+                Configuration.browser = BrowserstackDriver.class.getName();
+            } else {
+                Configuration.browser = EmulationDriver.class.getName();
+            }
         Configuration.browserSize = null;
         Configuration.timeout = 30000;
     }
