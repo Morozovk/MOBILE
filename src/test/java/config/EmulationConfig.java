@@ -20,7 +20,7 @@ public interface EmulationConfig extends Config{
     @Config.Key("platformVersion")
     String emulationOsVersion();
 
-    @Config.Key("app")
+    @Config.Key("emulationApp")
     String appPath();
 
     @Config.Key("appPackage")

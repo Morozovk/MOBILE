@@ -1,8 +1,6 @@
 package tests.remote;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import tests.TestBase;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
@@ -18,10 +16,11 @@ public class SearchTest extends TestBase {
     @BeforeAll
     static void setup() {
         System.setProperty("platform", "android");
-        System.setProperty("app", "bs://sample.app");
+        System.setProperty("apps", "bs://sample.app");
     }
 
     @Test
+    @DisplayName("Поиск и открытие страницы Appium")
     void searchAppiumTest() {
         step("Type search", () -> {
             $(accessibilityId("Search Wikipedia")).click();
@@ -36,6 +35,7 @@ public class SearchTest extends TestBase {
     }
 
     @Test
+    @DisplayName("Поиск и открытие страницы Selenium")
     void searchSelenideTest() {
         step("Type search", () -> {
             $(accessibilityId("Search Wikipedia")).click();
