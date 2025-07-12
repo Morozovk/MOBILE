@@ -1,4 +1,4 @@
-# Проект по автоматизации мобильного приложения "[https://www.wikipedia.org]((https://www.wikipedia.org))"
+# Проект по автоматизации мобильного приложения "[https://www.wikipedia.org](www.wikipedia.org)"
 
 >  <a href="https://www.wikipedia.org" target="_blank"><img align="center" src="https://github.com/Morozovk/Mobile/blob/master/media/Wiki-logo.jpg" width="75" height="75"></a>  Wikipedia - многоязычная общедоступная интернет-энциклопедия со свободным контентом.
 
