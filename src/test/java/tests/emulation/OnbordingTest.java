@@ -12,12 +12,12 @@ import static io.appium.java_client.AppiumBy.id;
 import static io.qameta.allure.Allure.step;
 
 
-public class SearchTest extends TestBase {
+public class OnbordingTest extends TestBase {
 
     @Test
     @Tag("android_emulation")
     @DisplayName("Проверка работы онбординга")
-    void onbordingTest() {
+    void onbordingFullFlouTest() {
 
         step("Type search", () ->
             $(id("org.wikipedia.alpha:id/primaryTextView")).shouldHave(text("The Free Encyclopedia\n…in " +
