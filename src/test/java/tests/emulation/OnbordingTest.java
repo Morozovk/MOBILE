@@ -52,6 +52,7 @@ public class OnbordingTest extends TestBase {
     @Tag("android_emulation")
     @DisplayName("Проверка пропуска онбординга")
     void skipOnbordingTest() {
+
         step("Тап по кнопке skip", () ->
                 $(id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).click());
 
