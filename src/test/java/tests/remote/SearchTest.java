@@ -22,11 +22,11 @@ public class SearchTest extends TestBase {
     @Test
     @DisplayName("Поиск и открытие страницы Appium")
     void searchAppiumTest() {
-        step("Type search", () -> {
+        step("Вводим в поиск 'Appium'", () -> {
             $(accessibilityId("Search Wikipedia")).click();
             $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Appium");
         });
-        step("Verify content found", () ->
+        step("Проверка резульатов поиска", () ->
                 $$(id("org.wikipedia.alpha:id/page_list_item_title"))
                         .shouldHave(sizeGreaterThan(0)));
         step("Открываем страницу", () -> {
@@ -37,11 +37,11 @@ public class SearchTest extends TestBase {
     @Test
     @DisplayName("Поиск и открытие страницы Selenium")
     void searchSelenideTest() {
-        step("Type search", () -> {
+        step("Вводим в поиск 'Selenium'", () -> {
             $(accessibilityId("Search Wikipedia")).click();
             $(id("org.wikipedia.alpha:id/search_src_text")).sendKeys("Selenium");
         });
-        step("Verify content found", () ->
+        step("Проверка резульатов поиска", () ->
                 $$(id("org.wikipedia.alpha:id/page_list_item_title"))
                         .shouldHave(sizeGreaterThan(0)));
         step("Открываем страницу", () -> {

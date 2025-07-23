@@ -18,32 +18,32 @@ public class OnbordingTest extends TestBase {
     @DisplayName("Проверка работы онбординга")
     void onbordingFullFlouTest() {
 
-        step("Type search", () ->
+        step("Проверка текста на странице", () ->
             $(id("org.wikipedia.alpha:id/primaryTextView")).shouldHave(text("The Free Encyclopedia\n…in " +
                     "over 300 languages")));
 
-        step("Тап по кнопке Continue", () ->
+        step("Тап по кнопке 'Continue'", () ->
                 $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click());
 
-        step("Проверяем текст на странице", () ->
+        step("Проверка текста на странице", () ->
             $(id("org.wikipedia.alpha:id/primaryTextView")).shouldHave(text("New ways to explore")));
 
-        step("Тап по кнопке Continue", () ->
+        step("Тап по кнопке 'Continue'", () ->
                 $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click());
 
-        step("Проверяем текст на странице", () ->
+        step("Проверка текста на странице", () ->
                 $(id("org.wikipedia.alpha:id/primaryTextView")).shouldHave(text("Reading lists with sync")));
 
-        step("Тап по кнопке Continue", () ->
+        step("Тап по кнопке 'Continue'", () ->
                 $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click());
 
-        step("Проверяем текст на странице", () ->
+        step("Проверка текста на странице", () ->
                 $(id("org.wikipedia.alpha:id/primaryTextView")).shouldHave(text("Data & Privacy")));
 
-        step("Тап по кнопке Continue", () ->
+        step("Тап по кнопке 'Continue'", () ->
                 $(id("org.wikipedia.alpha:id/fragment_onboarding_done_button")).click());
 
-        step("Проверка закрытия онбординга и переход к сратовой странице с модалкой", () ->
+        step("Проверка закрытия онбординга и переход к стартовой странице с модалкой", () ->
                 $(id("org.wikipedia.alpha:id/main_toolbar_wordmark")).shouldHave(visible));
     }
 
@@ -52,10 +52,10 @@ public class OnbordingTest extends TestBase {
     @DisplayName("Проверка пропуска онбординга")
     void skipOnbordingTest() {
 
-        step("Тап по кнопке skip", () ->
+        step("Тап по кнопке 'skip'", () ->
                 $(id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).click());
 
-        step("Проверка закрытия онбординга и переход к статовой странице", () ->
+        step("Проверка закрытия онбординга и переход к стартовой странице", () ->
                 $(id("org.wikipedia.alpha:id/main_toolbar_wordmark")).shouldHave(visible));
     }
 }
