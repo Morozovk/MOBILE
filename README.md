@@ -9,6 +9,8 @@
 
 * <a href="#cases">Реализованные тест кейсы</a>
 
+* <a href="#jenkins">Сборка в Jenkins</a>
+
 * <a href="#console">Команда для запуска из терминала</a>
 
 * <a href="#allure">Allure отчет</a>
@@ -43,6 +45,24 @@
 
 ---
 
+<a id="jenkins"></a>
+### Сборка в [Jenkins](https://jenkins.autotests.cloud/view/034/job/034-Morozovk98-Mobile/build?delay=0sec)
+
+- Реалиована джоба для удаленного запуска с выбором параметров
+<a id="params"></a>
+
+#### Параметры сборки Jenkins:
+
+android_browserstack- Запуск на browserstack
+android_emulation - Запуск на эмуляторе
+test- запуск всех тестов
+
+<p align="center">  
+<img src="https://github.com/Morozovk/MOBILE/blob/master/media/Jenkins_job.png" width="950"/ alt="Jenkins-result"></a>  
+</p>
+
+---
+
 <a id="console"></a>
 ### Команда для запуска из терминала:
 
@@ -56,12 +76,12 @@
 - Реализован Allure отчет
 
 <p align="center">  
-<img src="https://github.com/Morozovk/Mobile/blob/master/media/allure-result.png" width="950"/ alt="Allure-result"></a>  
+<img src="https://github.com/Morozovk/MOBILE/blob/master/media/Allure_result.png" width="950"/ alt="Allure-result"></a>  
 </p>
 
 
 <p align="center">  
-<img src="https://github.com/Morozovk/Mobile/blob/master/media/allure-test-cases.png" width="950"/ alt="Allure-result"></a>  
+<img src="https://github.com/Morozovk/MOBILE/blob/master/media/Allure_testcases.png" width="950"/ alt="Allure-result"></a>  
 </p>
 
 ---
