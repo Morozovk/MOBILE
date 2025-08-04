@@ -53,8 +53,8 @@
 
 #### Параметры сборки Jenkins:
 
-android_browserstack- Запуск на browserstack
-android_emulation - Запуск на эмуляторе
+android_browserstack- Запуск на browserstack\
+android_emulation - Запуск на эмуляторе\
 test- запуск всех тестов
 
 <p align="center">  
