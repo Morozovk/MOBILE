@@ -70,6 +70,8 @@ test- запуск всех тестов
  gradle clean android_browserstack \
  gradle clean android_emulation
 
+---
+
 <a id="allure"></a>
 ### [Allure отчет](https://jenkins.autotests.cloud/view/034/job/034-Morozovk98-Mobile/15/allure/)
 
